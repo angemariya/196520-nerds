@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Maria Angelova](https://up.htmlacademy.ru/htmlcss/16/user/196520).
-* Наставник: `Неизвестно`.
+* Наставник: [Альбина Токарчук](https://up.htmlacademy.ru/htmlcss/16/user/167491).
 
 ---
 
