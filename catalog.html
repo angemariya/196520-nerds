@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="index-logo">
+          <img src="img/index-logo.png" width="120" height="100" alt="Студия Нёрдс">
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="basket">
+          <img src="img/icon.png" width="30" height="30" alt="Корзина">
+          <a class="button" href="#">Корзина</a>
+        </div>
+        <div>Магазин готовых шаблонов</div>
+    </header>
+    <main>
+      <form  method="post">
+        <label for="price"><b>СТОИМОСТЬ</b></label>
+        <br>
+        от 0<input id="price" type="range" min="0" max="15000" step="1"> до 15 000
+
+        <b>СЕТКА:</b>
+        <br>
+          <label for="adaptiv"><input type="radio" name="adaptiv" id="adaptiv">Адаптивная</label>
+          <label for="fix"><input type="radio" name="fix" id="fix" value="Фиксированная">Фиксированная</label>
+          <label for="elastic"><input type="radio" name="elastic" id="elastic" value="Резиновая">Резиновая</label>
+        </label>
+        <br>
+        <b>ОСОБЕННОСТИ:</b>
+        <br>
+          <label for="slider"><input type="checkbox" name="slider" id="slider "value="" checked>Слайдер</label>
+          <label for="advantage"><input type="checkbox" name="advantage" id="advantage" value="">Блок преимуществ</label>
+          <label for="news"><input type="checkbox" name="news" id="news"value="" checked>Новости</label>
+          <label for="gallery"><input type="checkbox" name="gallery" value="">Галерея</label>
+          <label for="basket"><input type="checkbox" name="basket" id="basket" value="">Корзина</label>
+      </form>
+
+      <div class="container">
+        <b>СОРТИРОВАТЬ:</b>
+        <p>По цене</p>
+        <p>По типу</p>
+        <p>По названию</p>
+        <div class="sort">
+          <a href="#up">up</a>
+          <a href="#down">dwn</a>
+        </div>
+        <div class="sites">
+          <img src="img/sedona.jpg" alt="Sedona">
+          <img src="img/pink.jpg" alt="Pink">
+          <img src="img/borodinski.jpg" alt="Borodiski">
+          <img src="img/mishka.jpg" alt="Mishka">
+          <img src="img/aplus" alt="Aplus">
+          <img src="img/kvast" alt="Kvast">
+        </div>
+      </div>
+      <div class="paginator">
+        <a href="#1">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a href="#prev">Назад</a>
+      </div>
+    </main>
+    <footer>
+      <div class="map">
+        <img src="img/map" width="100%" height="200" alt="Карта">
+      </div>
+      <div class="adress">
+        <b>NЁРДС DESIGN STUDIO</b>
+        <p>191186, Санкт-Петербург,
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="#" class="btn">Напишите нам</a>
+      </div>
+      <div class="social-media-footer">
+          <a href="#" class="vk"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="insta"></a>
+      </div>
+      <div class="footer-text">
+          <h1>Давайте дружить, это выгодно!</h1>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>
