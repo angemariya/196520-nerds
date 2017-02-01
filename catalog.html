@@ -3,14 +3,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Магазин готовых шаблонов</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="index-logo">
-          <a href="catalog.html"><img src="img/index-logo.png" width="120" height="100" alt="Студия Нёрдс"></a>
+          <a href="index.html"><img src="img/index-logo.png" width="120" height="100" alt="Студия Нёрдс"></a>
         </div>
 
         <nav>
@@ -38,24 +38,34 @@
     </header>
     <main>
       <form  method="post">
-        <label for="price"><h2>Стоимость:</h2></label>
 
-        <div class="input-range"></div>
+        <fieldset>
+          <h2>Стоимость:</h2>
 
-        <h2>Сетка:</h2>
+          <div class="input-range"></div>
+          <span>От</span> <input type="text" name="from"></input> <span>До</span> <input type="text" name="to"></input>
 
-          <input type="radio" name="net" id="adaptive"><label  for="adaptive">Адаптивная</label>
-          <input type="radio" name="net" id="fix" value="Фиксированная"><label for="fix">Фиксированная</label>
-          <input type="radio" name="net" id="elastic" value="Резиновая"><label for="elastic">Резиновая</label>
-        </label>
+        </fieldset>
 
-        <h2>Особенности:</h2>
+        <fieldset>
+          <h2>Сетка:</h2>
 
-          <input type="checkbox" name="slider" id="slider" value="" checked><label for="slider">Слайдер</label>
-          <input type="checkbox" name="advantage" id="advantage" value=""><label for="advantage">Блок преимуществ</label>
-          <input type="checkbox" name="news" id="news"value="" checked><label for="news">Новости</label>
-          <input type="checkbox" name="gallery" value=""><label for="gallery">Галерея</label>
-          <input type="checkbox" name="basket" id="basket" value=""><label for="basket">Корзина</label>
+            <input type="radio" name="net" id="adaptive"><label  for="adaptive">Адаптивная</label>
+            <input type="radio" name="net" id="fix" ><label for="fix">Фиксированная</label>
+            <input type="radio" name="net" id="elastic"><label for="elastic">Резиновая</label>
+
+        </fieldset>
+        <fieldset>
+          <h2>Особенности:</h2>
+
+            <input type="checkbox" name="slider" id="slider" value="" checked><label for="slider">Слайдер</label>
+            <input type="checkbox" name="advantage" id="advantage" value=""><label for="advantage">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="news"value="" checked><label for="news">Новости</label>
+            <input type="checkbox" name="gallery" value=""><label for="gallery">Галерея</label>
+            <input type="checkbox" name="basket" id="basket" value=""><label for="basket">Корзина</label>
+
+            <button type="button" name="button">Показать</button>
+        </fieldset>
       </form>
 
       <div class="container">
@@ -77,7 +87,7 @@
             </div>
           </div>
           <div class="Pink">
-            <img src="img/pink.jpg" alt="Pink">
+            <a href="#"><img src="img/pink.jpg" alt="Pink"></a>
             <div class="description">
               <h3>Pink App</h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -85,7 +95,7 @@
             </div>
           </div>
           <div class="Barbershop">
-            <img src="img/borodinski.jpg" alt="Borodiski">
+            <a href="#"><img src="img/borodinski.jpg" alt="Borodiski"></a>
             <div class="description">
               <h3>Barbershop</h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -93,7 +103,7 @@
             </div>
           </div>
           <div class="Mishka">
-            <img src="img/mishka.jpg" alt="Mishka">
+            <a href="#"><img src="img/mishka.jpg" alt="Mishka"></a>
             <div class="description">
               <h3>Mishka</h3>
               <p>Интернет-магазин вязаных игрушек</p>
@@ -101,7 +111,7 @@
             </div>
           </div>
           <div class="Aplus">
-            <img src="img/aplus" alt="Aplus">
+            <a href="#"><img src="img/aplus" alt="Aplus"></a>
             <div class="description">
               <h3>A PLUS</h3>
               <p>Лендинг курсов повышения квалификации</p>
@@ -109,7 +119,7 @@
             </div>
           </div>
           <div class="Kvast">
-            <img src="img/kvast" alt="Kvast">
+            <a href="#"><img src="img/kvast" alt="Kvast"></a>
             <div class="description">
               <h3>Кваст</h3>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -119,9 +129,9 @@
         </div>
       </div>
       <div class="paginator">
-        <a href="#1">1</a>
-        <a href="#2">2</a>
-        <a href="#3">3</a>
+        <a>1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
         <a href="#prev">Назад</a>
       </div>
 
